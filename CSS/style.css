@@ -4,11 +4,11 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: black;
 }
 
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
 }
@@ -42,6 +42,7 @@ nav{
 .navcontent div{
     font-size: 2em;
     font-weight: bolder;
+    color: white;
 }
 
 .navcontent ul {
@@ -63,6 +64,7 @@ nav{
     margin: 5px;
     width: 100px;
     padding: 1px;
+    color: white;
 }
 
 .navcontent ul li:hover{
@@ -76,9 +78,17 @@ main
 {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     font-size: 1.5em;
+}
+
+.ctr_btn{
+    /* margin: 1.25em; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer{
@@ -89,4 +99,8 @@ main
     height: 15vh;
     display: flex;
     justify-content: space-around;
+}
+
+.footer div{
+    color: white;
 }
