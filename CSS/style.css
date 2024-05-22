@@ -164,18 +164,20 @@ main
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 25px;
 }
 
-.blddonation p, .bldfacts p{
-    font-size:  20px;
-    font-weight: 500;
+.bldfacts *{
+    /* font-size: larger; */
+    /* font-weight: 700; */
+    font-size: 0.95em;
     color: rgb(213, 213, 213);
 }
 
-.blddonation b, .bldfacts b{
-    font-size: larger;
-    font-weight: 700;
-    color: rgb(213, 213, 213);
+.bldfacts div{
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .footer{
@@ -190,16 +192,4 @@ main
 
 .footer div{
     color: white;
-}
-::-webkit-scrollbar {
-    height: 12px;
-    width: 15px; 
-}
-::-webkit-scrollbar-track {
-    background: #000000; 
-}
-::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background: #3b0606; 
- 
 }
