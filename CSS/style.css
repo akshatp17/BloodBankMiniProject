@@ -96,15 +96,17 @@ main
 .quote{
     /* padding: 10px; */
     font-size: 2.5em;
-    background-image: url(../Images/bloodquote.jpg);
+    background-image: url(../Images/bloodquote.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
 }
 
 #quoteintro{
     margin: 15px;
     text-align: center;
     color: white;
+    text-shadow: rgb(54, 5, 5) 3px 3px 3px;
 }
 
 .appointment{
