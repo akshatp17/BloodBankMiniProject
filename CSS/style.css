@@ -32,7 +32,7 @@ nav{
     padding: 25px;
     z-index:999;
     background-color: rgb(59, 6, 6);
-    height: 10%;
+    height: 1%;
 }
 
 .navcontent{
@@ -264,5 +264,12 @@ main
 @media (max-width:541px){
     html{
         overflow-x: hidden;
+    }
+    .nav{
+        height: 5%;
+    }
+
+    .navcontent div{
+        font-size: 1.1em;
     }
 }
