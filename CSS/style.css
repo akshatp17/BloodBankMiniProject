@@ -132,7 +132,7 @@ main
 .appointment{
     /* margin: 1.25em; */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content:space-around;
     align-items: center;
     text-align: center;
@@ -159,7 +159,7 @@ main
     border-radius:60px;
     cursor:pointer;
     font-size: large;
-    background-image: linear-gradient(to left, #7f1818,#f9a5a5,#9f3232);
+    background-image: linear-gradient(to left, #ff4c4c,#f9a5a5,#ff4c4c);
     transition: 0.3s;
     background-size: 200%;
  }
@@ -185,7 +185,12 @@ main
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 10px 25px 0px 25px;
+}
+
+.blddonation {
+    width: 50%;
+    height: 350px;
 }
 
 .bldfacts *{
@@ -225,6 +230,7 @@ main
     }
     .quote{
         font-size: 1.5em;
+        min-height: 250px;
     }
     .blddonation{
         font-size: medium;
@@ -255,6 +261,7 @@ main
 @media (max-width:900px){
     .quote{
         font-size: 1em;
+        min-height: 250px;
     }
     .bldfacts{
         font-size: medium;
@@ -276,7 +283,8 @@ main
         width:300px;
     }
     .quote{
-        background-position: left;
+        /* background-position: left; */
+        min-height: 250px;
     }
     
 }
