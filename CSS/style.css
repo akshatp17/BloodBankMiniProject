@@ -6,6 +6,7 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: black;
+    box-sizing: border-box;
 }
 
 body {
@@ -24,10 +25,13 @@ body {
 
 nav{
     display: flex;
-    position: relative;
+    position: fixed;
+    right:0;
+    left:0;
     padding: 25px;
+    z-index:999;
     background-color: rgb(59, 6, 6);
-    height: 2vh;
+    height: 10%;
 }
 
 .navcontent{
@@ -41,7 +45,7 @@ nav{
 }
 
 .navcontent div{
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bolder;
     color: white;
 }
@@ -50,6 +54,7 @@ nav{
     display: flex;
     position: relative;
     list-style-type: none;
+    font-size:1em;
     /* gap: 25px; */
 }
 
@@ -74,6 +79,15 @@ nav{
     background-color: white;
     color: black;
 }
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+.menu-toggle {
+    display: none;
+  }
 
 main
 {
@@ -97,7 +111,8 @@ main
 
 .quote{
     /* padding: 10px; */
-    font-size: 2.5em;
+    font-size: 2.3em;
+    margin-top: 5vh;
     background-image: url(2.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -105,7 +120,9 @@ main
 }
 
 #quoteintro{
-    margin: 15px;
+    margin: 18%;
+    position:relative;
+    right:0;
     text-align: center;
     color: white;
     text-shadow: rgb(54, 5, 5) 3px 3px 3px;
@@ -115,8 +132,10 @@ main
     /* margin: 1.25em; */
     display: flex;
     flex-direction: column;
+    justify-content:space-around;
     align-items: center;
     text-align: center;
+    
 }
 
 .aptmnt{
@@ -135,16 +154,17 @@ main
     align-items: center;
     justify-content: space-around;
     border:none;
+    color: #252525;
     border-radius:60px;
     cursor:pointer;
-    font-size: 20px;
-    background-image: linear-gradient(to left, #fd6161,#fab7b7,#ec0202);
+    font-size: large;
+    background-image: linear-gradient(to left, #7f1818,#f9a5a5,#9f3232);
     transition: 0.3s;
     background-size: 200%;
  }
  
 .homeBtn:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
     background-position:right;
  }
 
@@ -187,9 +207,61 @@ main
     width: 100%;
     height: 15vh;
     display: flex;
+    right:0;
     justify-content: space-around;
 }
 
 .footer div{
     color: white;
+}
+  
+  @media (max-width: 1100px) {
+    .navcontent ul {
+      display: none; 
+    }
+    .menu-toggle {
+      display: block;
+    }
+    .quote{
+        font-size: 1.5em;
+    }
+    .blddonation{
+        font-size: medium;
+    }
+    .bldfacts{
+        font-size: large;
+    }
+    .aptmnt{
+        font-size: large;
+    }
+    .homeBtn{
+        font-size: small;
+        height:40px;
+        font-weight: 520;
+        width:140px;
+        padding:10px;
+    }
+  }
+
+@media (max-width:600px){
+    .bldfacts{
+        font-size: x-small;
+    }
+    .blddonation{
+        font-size: small;
+    }
+}
+@media (max-width:900px){
+    .quote{
+        font-size: 1em;
+    }
+    .bldfacts{
+        font-size: medium;
+    }
+   
+}
+@media (max-width:541px){
+    html{
+        overflow-x: hidden;
+    }
 }
