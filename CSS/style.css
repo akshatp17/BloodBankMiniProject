@@ -272,4 +272,11 @@ main
     .navcontent div{
         font-size: 1.1em;
     }
+    .chart{
+        width:300px;
+    }
+    .quote{
+        background-position: left;
+    }
+    
 }
