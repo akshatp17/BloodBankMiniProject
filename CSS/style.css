@@ -185,7 +185,7 @@ main
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 25px 0px 25px;
+    padding: 10px 0px 0px 25px;
 }
 
 .blddonation {
@@ -279,7 +279,7 @@ main
    
 }
 
-@media (max-width:541px){
+@media (max-width:550px){
     html{
         overflow-x: hidden;
     }
@@ -290,16 +290,23 @@ main
     .navcontent div{
         font-size: 1.1em;
     }
-    .chart{
-        width:300px;
-    }
     .quote{
         /* background-position: left; */
         min-height: 250px;
     }
     .blddonation{
-        font-size: small;
-        max-height: 250px;
+        font-size:0.35em;
+       
+    }
+}
+@media (max-width:800px){
+    .chart{
+        width:300px;
+    }
+}
+@media (max-width:450px) {
+    .chart{
+        width:180px;
     }
     
 }
