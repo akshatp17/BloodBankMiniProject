@@ -296,7 +296,7 @@ main
     }
     .blddonation{
         font-size:0.3em;
-       
+        height:fit-content;
     }
 }
 @media (max-width:800px){
@@ -308,5 +308,11 @@ main
     .chart{
         width:180px;
     }
-    
+    .contentbox{
+        min-height:fit-content;
+        padding:15px 0px;
+     }
+     .blddonation{
+        font-size:0.26em;
+    }
 }
