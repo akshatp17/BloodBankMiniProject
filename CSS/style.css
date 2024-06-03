@@ -260,8 +260,8 @@ main
         font-size: x-small;
     }
     .blddonation{
-        font-size: small;
-        max-height: 250px;
+        font-size: xx-small;
+        max-height: fit-content;
     }
 }
 
@@ -275,8 +275,12 @@ main
     }
     .blddonation{
         font-size: small;
-        max-height: 250px;
+        height:fit-content;
     }
+    .contentbox{
+        min-height:fit-content;
+        padding:15px 0px;
+     }
    
 }
 
