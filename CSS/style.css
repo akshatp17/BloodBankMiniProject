@@ -191,6 +191,7 @@ main
 .blddonation {
     width: 50%;
     height: 350px;
+    font-size:0.82em;
 }
 
 .bldfacts *{
@@ -313,6 +314,6 @@ main
         padding:15px 0px;
      }
      .blddonation{
-        font-size:0.28em;
+        font-size:0.266em;
     }
 }
