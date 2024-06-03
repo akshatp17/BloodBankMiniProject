@@ -248,6 +248,10 @@ main
         width:140px;
         padding:10px;
     }
+    .blddonation{
+        font-size: small;
+        max-height: 250px;
+    }
   }
 
 @media (max-width:600px){
@@ -256,8 +260,10 @@ main
     }
     .blddonation{
         font-size: small;
+        max-height: 250px;
     }
 }
+
 @media (max-width:900px){
     .quote{
         font-size: 1em;
@@ -266,8 +272,13 @@ main
     .bldfacts{
         font-size: medium;
     }
+    .blddonation{
+        font-size: small;
+        max-height: 250px;
+    }
    
 }
+
 @media (max-width:541px){
     html{
         overflow-x: hidden;
@@ -285,6 +296,10 @@ main
     .quote{
         /* background-position: left; */
         min-height: 250px;
+    }
+    .blddonation{
+        font-size: small;
+        max-height: 250px;
     }
     
 }
