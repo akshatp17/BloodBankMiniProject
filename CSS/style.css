@@ -207,6 +207,70 @@ main
     text-decoration: underline;
 }
 
+.listinfo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.list_button {
+    --color: #ff7878;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: 3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+    
+   .list_button a{
+        text-decoration: none;
+   }
+   
+   .list_button::before, .list_button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .list_button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .list_button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .list_button:hover::before, .list_button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .list_button:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .list_button:active {
+    filter: brightness(.8);
+   }   
+
 .footer{
     position: relative;
     bottom: 0px;
@@ -263,6 +327,10 @@ main
         font-size: xx-small;
         max-height: fit-content;
     }
+    .listinfo{
+        min-height: 400px;
+        font-size: 20px;
+    }
 }
 
 @media (max-width:900px){
@@ -280,7 +348,10 @@ main
     .contentbox{
         min-height:fit-content;
         padding:15px 0px;
-     }
+    }
+    .listinfo{
+        min-height: 300px;
+    }
    
 }
 
@@ -303,10 +374,19 @@ main
         font-size:0.4em;
         height:fit-content;
     }
+    .listinfo, .list_button p{
+        font-size: 15px;
+    }
+    .listinfo{
+        min-height: 200px;
+    }
 }
 @media (max-width:800px){
     .chart{
         width:300px;
+    }
+    .listinfo{
+        min-height: 350px;
     }
 }
 @media (max-width:450px) {
@@ -319,5 +399,14 @@ main
      }
      .blddonation{
         font-size:0.266em;
+    }
+    .listinfo, .list_button p{
+        font-size: 10px;
+    }
+    .list_button{
+        padding: 0.3em 0.7em;
+    }
+    .listinfo{
+        min-height: 100px;
     }
 }
