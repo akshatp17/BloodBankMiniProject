@@ -1,70 +1,69 @@
 *{
-    margin: 0;
-    border:0;
-  }
-  html {
-    margin: 0;
-    border: 0;
-  }
-  
-  .page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: #252525;
-    overflow-x: hidden;
-    background-image:url(..\Images\bldbg.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .container {
-    height: max-content;
-    width: 90vh;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    gap:8px;
-  }
-  
-  .b {
-    height: 13vh;
-    width: inherit-2px;
-    border-radius: 10px;
-    background-color:ghostwhite;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    transition: 0.3s;
-  }
-  
-  button {
-    background-color: #bfeebf;
-    height: 3vh;
-    width: 11vh;
-    border-radius: 5px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.3s;
-  }
-  
-  button:hover {
-    background-color: #2dd72d;
-    transform: scale(1.15);
-  }
-  
-  button:active {
-    background-color: #00a313;
-  }
-  
-  .b:hover {
-    height: 20vh;
-  
-  }
-  
-  
-  
+  margin: 0;
+  border:0;
+}
+html {
+  margin: 0;
+  border: 0;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #252525;
+  overflow-x: hidden;
+  background-image:url(pic.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  height: max-content;
+  width: 90vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+}
+
+.b {
+  height: 13vh;
+  width: inherit-2px;
+  border-radius: 10px;
+  background-color:ghostwhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.3s;
+}
+
+button {
+  background-color: #bfeebf;
+  height: 3vh;
+  width: 11vh;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #2dd72d;
+  transform: scale(1.15);
+}
+
+button:active {
+  background-color: #00a313;
+}
+
+.b:hover {
+  height: 20vh;
+
+}
+
+
