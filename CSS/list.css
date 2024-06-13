@@ -8,9 +8,6 @@ html {
 }
 
 .page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   width: 100vw;
   background-color: #252525;
@@ -19,21 +16,90 @@ html {
   background-position: center;
   background-size: cover;
 }
+nav{
+  display: flex;
+  right:0;
+  left:0;
+  padding: 25px;
+  z-index:999;
+  background-color: rgb(59, 6, 6);
+  height: 1%;
+}
 
+.navcontent{
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navcontent div{
+  font-size: 1.8em;
+  font-weight: bolder;
+  color: white;
+}
+
+.navcontent ul {
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  font-size:1em;
+  /* gap: 25px; */
+}
+
+.navcontent *{
+  cursor: pointer;
+}
+
+.navcontent ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin: 5px;
+  width: 100px;
+  padding: 1px;
+  color: white;
+}
+
+.navcontent ul li:hover{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  color: black;
+}
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+.menu-toggle {
+  display: none;
+}
 .container {
-  height: max-content;
+  height: min-content;
+  margin-top:50px;
   width: 90vh;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   gap:8px;
 }
-
+.list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
 .b {
-  height: 11vh;
-  width: inherit-2px;
+  height: 13vh;
+  opacity:90%;
   border-radius: 10px;
-  padding:20px;
+  padding-left:20px;
   background-color:ghostwhite;
   display: grid;
   align-items: center;
@@ -63,7 +129,7 @@ button:active {
 }
 
 .b:hover {
-  height: 20vh;
+  height: 18vh;
 
 }
 
