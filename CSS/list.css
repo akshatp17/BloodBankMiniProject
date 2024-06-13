@@ -33,10 +33,11 @@ html {
   height: 13vh;
   width: inherit-2px;
   border-radius: 10px;
+  padding:20px;
   background-color:ghostwhite;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-around;
+  grid-template-columns:300px 270px 100px;
   transition: 0.3s;
 }
 
