@@ -11,15 +11,15 @@ button1.addEventListener("click", function() {
 });
 button2.addEventListener("click", function() {
 
-  window.alert("Appointment Scheduled!!!");
+  window.alert("Appointment at Bangalore Medical Services Trust Scheduled!!!");
 });
 button3.addEventListener("click", function() {
 
-  window.alert("Appointment Scheduled!!!");
+  window.alert("Appointment at Rashtrotthana Blood Centre Scheduled!!!");
 });
 button4.addEventListener("click", function() {
 
-  window.alert("Appointment Scheduled!!!");
+  window.alert("Appointment at Victoria Hospital Blood Bank Scheduled!!!");
 });
 button5.addEventListener("click", function() {
 
