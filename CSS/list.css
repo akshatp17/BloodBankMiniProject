@@ -30,14 +30,14 @@ html {
 }
 
 .b {
-  height: 13vh;
+  height: 11vh;
   width: inherit-2px;
   border-radius: 10px;
   padding:20px;
   background-color:ghostwhite;
   display: grid;
   align-items: center;
-  grid-template-columns:300px 270px 100px;
+  grid-template-columns:40% 40% 20%;
   transition: 0.3s;
 }
 
