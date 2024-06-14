@@ -22,6 +22,7 @@
 .list{
   display: flex;
   flex: 1;
+  width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -73,5 +74,18 @@ button:active {
 }
 
 .b:hover {
-  height: 18vh;
+  transform: scale(1.07);
+}
+@media (max-width: 1120px) {
+  .navcontent ul {
+    display: none; 
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+@media (max-width:700px){
+  .b{
+    width: 40vw;
+  }
 }
