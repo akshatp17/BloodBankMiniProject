@@ -16,18 +16,22 @@ main{
   justify-content: center;
 }
 
+.content button a{
+  height: 100%;
+  width: 100%;
+}
+
 button {
   background-color: rgb(59, 6, 6);
   margin-top: 40px;
-  height: 10vh;
-  width: 30vh;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 0;
   outline: none;
   cursor: pointer;
   font-size: 0.9em;
   font-weight: 400;
   transition: 0.3s;
+  padding: 15px;
 }
 
 p {

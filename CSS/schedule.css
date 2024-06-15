@@ -167,6 +167,10 @@ input:valid ~ label{
     border: none;
 }
 
+#box_buttom button a{
+    color: white;
+}
+
 #box_bottom button:hover{
     background-color: rgb(80, 2, 2);
 }
