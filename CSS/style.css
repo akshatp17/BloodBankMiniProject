@@ -67,6 +67,10 @@ nav{
     cursor: pointer;
 }
 
+nav a{
+    color: white;
+}
+
 .navcontent ul li{
     display: flex;
     justify-content: center;
@@ -82,6 +86,10 @@ nav{
     display: flex;
     justify-content: center;
     background-color: white;
+    color: black;
+}
+
+.navcontent ul li a:hover{
     color: black;
 }
 .line {

@@ -55,7 +55,7 @@
 
 .b > div{
   border-right: 1px solid rgba(39, 39, 39, 0.277);
-  text-align: center;
+  /* text-align: center; */
 }
 
 .b :last-child{

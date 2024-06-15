@@ -1,27 +1,43 @@
-var button1 = document.getElementById("button1");
-var button2 = document.getElementById("button2");
-var button3 = document.getElementById("button3");
-var button4 = document.getElementById("button4");
-var button5 = document.getElementById("button5");
+let Unit1 = document.getElementById('Unit1')
+let Unit2 = document.getElementById('Unit2')
+let Unit3 = document.getElementById('Unit3')
+let Unit4 = document.getElementById('Unit4')
+let Unit5 = document.getElementById('Unit5')
 
-// Add a click event listener to the button
-button1.addEventListener("click", function() {
+const buttons = document.querySelectorAll('button');
 
-  window.alert("Appointment at SAGAR HOSPITAL Scheduled!!!");
-});
-button2.addEventListener("click", function() {
+// Declare a variable to store the data
+let bloodbankData = [];
 
-  window.alert("Appointment at Bangalore Medical Services Trust Scheduled!!!");
-});
-button3.addEventListener("click", function() {
+// Function to fetch data from JSON file
+async function fetchBloodbanks() {
+    try {
+        const response = await fetch('./Files/bloodbanklist.json');
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        const data = await response.json();
+        bloodbankData = data.bloodbanks; // Store the fetched data
 
-  window.alert("Appointment at Rashtrotthana Blood Centre Scheduled!!!");
-});
-button4.addEventListener("click", function() {
+        // Call the function to display data in a table
+        displayBloodbanks(bloodbankData);
+    } catch (error) {
+        console.error('Error fetching or parsing JSON:', error);
+    }
+}
 
-  window.alert("Appointment at Victoria Hospital Blood Bank Scheduled!!!");
-});
-button5.addEventListener("click", function() {
+// Displaying the data
+function displayBloodbanks(bloodbanks) {
+  bloodbanks.forEach(bloodbank => {
+    console.log(bloodbank["Blood Bank List"] + "\t" + bloodbank["Address"] + "\t" + bloodbank["Contact"])
+  });
+}
 
-  window.alert("Appointment Scheduled!!!");
+fetchBloodbanks();
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    // when the button is clicked
+    window.location.href = "schedule.html";
+  });
 });
