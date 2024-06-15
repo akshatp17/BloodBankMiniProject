@@ -1,5 +1,5 @@
 :root {
-    --primcolor: rgb(47, 2, 131);
+    --primcolor: rgb(137, 6, 6);
 }
 
 h3 {
@@ -116,9 +116,9 @@ form {
     display: flex;
     height: 75%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
-    gap: 5px;
+    gap: 15px;
 }
 
 form input {
@@ -168,5 +168,5 @@ input:valid ~ label{
 }
 
 #box_bottom button:hover{
-    background-color: rgb(29, 2, 80);
+    background-color: rgb(80, 2, 2);
 }

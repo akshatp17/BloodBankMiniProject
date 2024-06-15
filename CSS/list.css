@@ -32,7 +32,7 @@
 .container {
     height: min-content;
     margin-top:50px;
-    width: 90vh;
+    width: 95vh;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -46,10 +46,20 @@
   padding-left:20px;
   background-color:ghostwhite;
   display: grid;
-  align-items: center;
-  grid-template-columns:40% 40% 20%;
+  align-items: center;            
+  /* grid-template-areas: "hospital address contact schedule"; */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   transition: 0.3s;
   text-align: center;
+}
+
+.b > div{
+  border-right: 1px solid rgba(39, 39, 39, 0.277);
+  text-align: center;
+}
+
+.b :last-child{
+  border-right: 0;
 }
 
 button {
