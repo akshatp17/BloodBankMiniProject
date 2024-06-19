@@ -118,7 +118,10 @@ button:active {
   }
 }
 @media (max-width:400px){
-  .p{
+  p{
     font-size: x-small;
   }
+}
+@media(max-width:355px){
+  p
 }
