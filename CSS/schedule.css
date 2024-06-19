@@ -186,26 +186,8 @@ input:valid ~ label{
    
     
 }
-@media (max-width:900px){
-    #aptcontent{
-        flex-direction: column;
-    }
-    .separator{
-        display:none;
-    }
-    p{
-        width:50vh;
-    }
-    .content h3 {
-        width:fit-content;
-    }
-    h3{
-        width:55vh;
-    }
-}
 
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 *, *:after, *:before {
 	box-sizing: border-box;
@@ -219,17 +201,6 @@ input:valid ~ label{
 	--c-bg-tertiary: #FDFDFD;
 	--c-text-primary: #1F1F25;
 	--c-text-secondary: #999FA6;
-}
-
-body {
-	font-family: "Inter", sans-serif;
-	line-height: 1.5;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--c-bg-primary);
-	color: var(--c-text-primary);
 }
 
 button {
@@ -257,18 +228,22 @@ button {
 .btn-group {
 	display: flex;
 	flex-wrap: wrap;
+    justify-content: space-evenly;
 	margin-bottom: 1rem;
 	margin-top: -.5rem;
 }
 
 .tag {
-	margin-right: .5rem;
-	margin-top: .5rem;
-	border: 0;
-	background-color: var(--c-bg-secondary);
-	border-radius: 10px;
-	padding: .5em .75em;
-	font-weight: 500;
+	width:6em;
+    height:max-content;
+    background-color: #fc5f5f;
+    outline: none;
+    border:0;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.tag:active{
+    background-color: #36e230;
 }
 
 .month-selector {
@@ -341,4 +316,25 @@ button {
 	&:focus {
 		background-color: var(--c-theme-primary-accent);
 	}
+}
+@media (max-width:900px){
+    #aptcontent{
+        flex-direction: column;
+    }
+    .separator{
+        display:none;
+    }
+    p{
+        width:50vh;
+    }
+    .content h3 {
+        width:fit-content;
+    }
+    h3{
+        width:55vh;
+    }
+    .datepicker{
+        width:53vh;
+       
+    }
 }
