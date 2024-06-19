@@ -338,3 +338,11 @@ button {
        
     }
 }
+@media (max-width:350px){
+    .datepicker{
+        width:45vh;
+    }
+    p{
+        width:40vh;
+    }
+}
