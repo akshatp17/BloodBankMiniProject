@@ -5,7 +5,8 @@
 h3 {
     color: var(--primcolor);
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 1em;
+    margin-left: 60px;
 }
 
 body {
@@ -37,9 +38,10 @@ main{
 #aptcontent{
     display: flex;
     /* z-index: 1000; */
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: large;
+    flex-direction: row;
 }
 
 .sidebar {
@@ -86,6 +88,8 @@ main{
 .content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 35vw;
     margin: 0px 5px 5px 0px;
     padding: 5px 5px 5px 0px;
@@ -173,4 +177,26 @@ input:valid ~ label{
 
 #box_bottom button:hover{
     background-color: rgb(80, 2, 2);
+}
+.cal{
+    height:30vh;
+    width:30vh;
+    background-color: rgb(0, 213, 255);
+}
+@media (max-width:900px){
+    #aptcontent{
+        flex-direction: column;
+    }
+    .separator{
+        display:none;
+    }
+    p{
+        width:50vh;
+    }
+    .content h3 {
+        width:fit-content;
+    }
+    h3{
+        width:55vh;
+    }
 }
