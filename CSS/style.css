@@ -391,12 +391,21 @@ main
     padding: 0 15px; 
 }
 
+.box_left{
+    color: white;
+}
+
+.box_right{
+    color: white;
+}
+
 .footer-content {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
     text-align: center; 
     margin-bottom: 10px;
+    color: white;
 }
 
 .footer-text {
