@@ -376,7 +376,7 @@ main
     bottom: 0px;
     background-color:rgb(20, 20, 20);
     width: 100%;
-    height: 15vh;
+    min-height:fit-content;
     display: flex;
     right:0;
     justify-content: space-around;

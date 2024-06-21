@@ -8,12 +8,22 @@
   align-items: center;
   padding: 15px 0 15px 0;
 }
-
+.contentbox{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-position: center;
+  
+}
 .leftbox{
-  width: 50%;
-  font-size: small;
+  width: 60%;
+  font-size: medium;
+  padding: 20px;
 }
 .rightbox{
   width: 50%;
-  font-size: small;
+  font-size: medium;
+}
+p,h3,h2,strong{
+    color:white;
 }
