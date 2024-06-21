@@ -18,7 +18,8 @@
                 <div class="line"></div>
                 </div>
                 <ul>
-                    <li>About</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#footer">About</a></li>
                     <li><a href="info.html">Info</a></li>
                 </ul>
             </div>
@@ -26,31 +27,30 @@
         <main>
             <div class="box">
                 <div id="header">
-                    <h3>Schdeule your appointment now:</h3>
+                    <h2>Schdeule your appointment now:</h2>
                 </div>
                 <div id="aptcontent">
                     <div class="sidebar">
                         <div class="infoic namebox">
                             <div class="forms">
+                                <div class="headings">
+                                    <div>Name : </div>
+                                    <div> Phone Number : </div>
+                                    <div>Email : </div>
+                                    <div>Date Of Birth : </div>
+                                </div>
                                 <form action="">
                                     <div class="input">
-                                        <label for="">Name : </label>
                                         <input type="text" placeholder="Full Name" required>
                                     </div>
                                     <div class="input">
-                                        <label for="">Phone Number : </label>
                                         <input type="text" inputmode="numeric" placeholder="Phone Number" required>
                                     </div>
                                     <div class="input">
-                                        <label for="">Email : </label>
                                         <input type="email" placeholder="Email ID" required>
                                     </div>
                                     <div class="input">
-                                        <label for="">Date Of Birth : </label>
                                         <input type="date" placeholder="Date Of Birth" required>
-                                    </div>
-                                    <div class="input">
-                                        <label for="">Gender : </label>
                                     </div>
                                 </form>
                             </div>
@@ -60,12 +60,23 @@
                     <div class="separator"></div>
             
                     <div class="content">
-                        <p>Select the date of appointment and the preferred time slot. Make sure to choose the correct blood group and purpose.</p>
+                        <p>Select the date of appointment and the preferred time slot<br>
+                            Make sure to choose the correct blood group and purpose</p>
                         <div class="datepicker">
                             <div class="datepicker-top">
                                 <div class="btn-group">
-                                    <button class="tag">9-12</button>
-                                    <button class="tag">2-5</button>
+                                    <div class="mydict">
+                                        <div>
+                                            <label>
+                                                <input type="radio" name="radio" checked="">
+                                                <span>9-12 PM</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="radio">
+                                                <span>2-4 PM</span>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="month-selector">
                                     
@@ -90,7 +101,7 @@
                                 <button class="date">6</button>
                                 <button class="date">7</button>
                                 <button class="date">8</button>
-                                <button class="date current-day">9</button>
+                                <button class="date">9</button>
                                 <button class="date">10</button>
                                 <button class="date">11</button>
                                 <button class="date">12</button>
@@ -103,7 +114,7 @@
                                 <button class="date">19</button>
                                 <button class="date">20</button>
                                 <button class="date">21</button>
-                                <button class="date">22</button>
+                                <button class="date current-day">22</button>
                                 <button class="date">23</button>
                                 <button class="date">24</button>
                                 <button class="date">25</button>
@@ -121,11 +132,11 @@
                     </div>
                 </div>
                 <div id="box_bottom">
-                    <button><a href="confirmation.html">Confirm</a></button>
+                    <button class="cnfm"><a href="confirmation.html">Confirm</a></button>
                 </div>
             </div>
         </main>
-            <div class="footer">
+            <div class="footer" id="footer">
                 <div class="container">
                     <div class="box_left">
 
