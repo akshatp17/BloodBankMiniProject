@@ -10,7 +10,9 @@ h2 {
 }
 
 body {
-    background-color: rgb(175, 230, 255);
+    /* background-color: rgba(239,58,30,0.805); */
+    background-image: url(../Images/bldqbg.jpg);
+    background-position: center ;
 }
 
 main {
@@ -237,7 +239,7 @@ button {
 .datepicker {
     width: 85%;
     max-width: 450px;
-    background-color: var(--c-bg-tertiary);
+    background-color: #ffffffa0;
     border-radius: 10px;
     box-shadow: 0 0 2px 0 rgba(#000, .2), 0 5px 10px 0 rgba(#000, .1);
     padding: 1rem;
@@ -489,10 +491,10 @@ label:last-child span {
 
 @media (max-width:350px) {
     .datepicker {
-        width: 45vh;
+        width: 40vh;
     }
 
     p {
-        width: 40vh;
+        width: 36vh;
     }
 }

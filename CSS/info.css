@@ -24,6 +24,21 @@
   width: 50%;
   font-size: medium;
 }
-p,h3,h2,strong{
-    color:white;
+
+.sec2{
+  background-image: url(../Images/boxbg.png);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+}
+
+.sec2 *{
+  color: white;
+}
+
+.sec2_items{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }

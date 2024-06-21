@@ -1,4 +1,5 @@
-//Function which will choose a quote to show randomely
+setInterval(ShowQuote,5000)
+
 function ShowQuote()
 {
     let Quotes=["A bottle of blood saved my life. Was it yours?",
@@ -11,11 +12,9 @@ function ShowQuote()
                 "If you want to witness a miracle, donate blood",
                 "Blood is the most precious gift that anyone can give to another person - the gift of life"];
     
-    //Choosing a quote
     let Pick = Math.floor(Math.random() * (Quotes.length));
-    //Fetching the div by ID and then writing in it using innter html
     let quoteDiv = document.getElementById("quoteintro");
     quoteDiv.innerHTML = `"${Quotes[Pick]}"`; 
 }
 
-ShowQuote();        //Refreshes Quote everytime home page refreshes
+ShowQuote();
