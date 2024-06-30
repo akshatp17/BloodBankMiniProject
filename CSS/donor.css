@@ -82,39 +82,6 @@
     text-align: center;
   }
   
-  .b > div{
-    border-right: 1px solid rgba(39, 39, 39, 0.277);
-    /* text-align: center; */
-  }
-  
-  .b :last-child{
-    border-right: 0;
-  }
-  
-  button {
-    background-color: #bfeebf;
-    height: 3vh;
-    width: 11vh;
-    border-radius: 5px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.3s;
-  }
-  
-  button:hover {
-    background-color: #2dd72d;
-    transform: scale(1.15);
-  }
-  
-  button:active {
-    background-color: #00a313;
-  }
-
-.heading > p{
-  color: white;
-}
   
   @media (max-width: 1120px) {
     .navcontent ul {
