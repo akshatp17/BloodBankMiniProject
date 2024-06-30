@@ -36,6 +36,10 @@
     justify-content: center;
     align-items: center;
   }
+
+  .list > h2{
+    margin-top: 10px;
+  }
     
   .container {
       height:max-content;
