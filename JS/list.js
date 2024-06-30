@@ -29,15 +29,19 @@ async function fetchBloodbanks() {
 // Displaying the data
 function displayBloodbanks(bloodbanks) {
   bloodbanks.forEach(bloodbank => {
-    console.log(bloodbank["Blood Bank List"] + "\t" + bloodbank["Address"] + "\t" + bloodbank["Contact"])
+    // console.log(bloodbank["Blood Bank List"] + "\t" + bloodbank["Address"] + "\t" + bloodbank["Contact"])
   });
 }
 
 fetchBloodbanks();
 
+var bloodbank_name;
+
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     // when the button is clicked
+    bloodbank_name = button.value
+    localStorage.setItem("BankName", bloodbank_name);
     window.location.href = "schedule.html";
   });
 });

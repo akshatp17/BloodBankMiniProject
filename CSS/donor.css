@@ -111,6 +111,10 @@
   button:active {
     background-color: #00a313;
   }
+
+.heading > p{
+  color: white;
+}
   
   @media (max-width: 1120px) {
     .navcontent ul {

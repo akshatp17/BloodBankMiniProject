@@ -35,22 +35,22 @@
                             <div class="forms">
                                 <div class="headings">
                                     <div>Name : </div>
-                                    <div> Phone Number : </div>
+                                    <div>Phone Number : </div>
                                     <div>Email : </div>
                                     <div>Date Of Birth : </div>
                                 </div>
-                                <form action="">
+                                <form action="" id="form1" onsubmit="return false">
                                     <div class="input">
-                                        <input type="text" placeholder="Full Name" required>
+                                        <input type="text" placeholder="Full Name" id="username" required onkeyup="validateForm()">
                                     </div>
                                     <div class="input">
-                                        <input type="text" inputmode="numeric" placeholder="Phone Number" required>
+                                        <input type="text" inputmode="numeric" placeholder="Phone Number" id="usernumber" required onkeyup="validateForm()">
                                     </div>
                                     <div class="input">
-                                        <input type="email" placeholder="Email ID" required>
+                                        <input type="email" placeholder="Email ID" id="usermail" required onkeyup="validateForm()">
                                     </div>
                                     <div class="input">
-                                        <input type="date" placeholder="Date Of Birth" required>
+                                        <input type="date" placeholder="Date Of Birth" id="userdob" required onkeyup="validateForm()">
                                     </div>
                                 </form>
                             </div>
@@ -135,40 +135,40 @@
                 <div id="box_bottom">
                     <div class="radio-input">
                         <label>
-                            <input value="value-1" name="value-radio" id="value-1" type="radio" checked="">
+                            <input value="A+" name="bloodgroup" id="value-1" type="radio" checked="">
                             <div>A+</div>
                         </label>
                         <label>
-                            <input value="value-2" name="value-radio" id="value-2" type="radio">
+                            <input value="A-" name="bloodgroup" id="value-2" type="radio">
                             <div>A-</div>
                         </label>
                         <label>
-                            <input value="value-3" name="value-radio" id="value-3" type="radio">
+                            <input value="B+" name="bloodgroup" id="value-3" type="radio">
                             <div>B+</div>
                         </label>
                         <label>
-                            <input value="value-4" name="value-radio" id="value-4" type="radio">
+                            <input value="B-" name="bloodgroup" id="value-4" type="radio">
                             <div>B-</div>
                         </label>
                         <label>
-                            <input value="value-5" name="value-radio" id="value-5" type="radio">
+                            <input value="AB+" name="bloodgroup" id="value-5" type="radio">
                             <div>AB+</div>
                         </label>
                         <label>
-                            <input value="value-6" name="value-radio" id="value-6" type="radio">
+                            <input value="AB-" name="bloodgroup" id="value-6" type="radio">
                             <div>AB-</div>
                         </label>
                         <label>
-                            <input value="value-7" name="value-radio" id="value-7" type="radio">
+                            <input value="O+" name="bloodgroup" id="value-7" type="radio">
                             <div>O+</div>
                         </label>
                         <label>
-                            <input value="value-8" name="value-radio" id="value-8" type="radio">
+                            <input value="O-" name="bloodgroup" id="value-8" type="radio">
                             <div>O-</div>
                         </label>
                         <span class="selection"></span>
                     </div>
-                    <button class="cnfm"><a href="confirmation.html">Confirm</a></button>
+                    <button class="cnfm" type="submit" form="form1" id="cnfrmButton">Submit</button>
                 </div>
             </div>
         </main>
@@ -198,6 +198,7 @@
             </div>
         </div>
     </div>
-    <script src="JS/home.js"></script>
+    
+    <script src="JS/schedule.js"></script>
 </body>
 </html>
