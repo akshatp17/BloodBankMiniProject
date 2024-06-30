@@ -93,6 +93,23 @@ button:hover {
 button:active {
   background-color: #00a313;
 }
+.homeBtn{
+    padding: 15px;
+    height:7vh;
+    width:17vw;
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border:none;
+    color: #252525;
+    border-radius:60px;
+    cursor:pointer;
+    font-size: large;
+    background-image: linear-gradient(to left, #ff4c4c,#f9a5a5,#ff4c4c);
+    transition: 0.3s;
+    background-size: 200%;
+ }
 
 .b:hover {
   transform: scale(1.03);
