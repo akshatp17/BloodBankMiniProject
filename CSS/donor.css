@@ -1,0 +1,152 @@
+.fullpage {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    overflow-x: hidden;
+ }
+ nav{
+    display: flex;
+    right:0;
+    left:0;
+    padding: 25px;
+    z-index:999;
+    background-color: rgb(59, 6, 6);
+    height: 5%;
+}
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .list{
+    display: flex;
+    height:100vh;
+    width: 100vw;
+    padding-top:2vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .container {
+      height:max-content;
+      margin-top:20px;
+      width: 90vw;
+      background-color: rgb(59, 6, 6);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+  .heading {
+    height: 7vh;
+    opacity:95%;
+    border-radius: 10px;
+    padding-left:20px;
+    background-color:rgb(58, 3, 3);
+    display: grid;
+    align-items: center;            
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    transition: 0.3s;
+    text-align: center;
+  }
+  .b {
+    height: 9vh;
+    opacity:95%;
+    border-radius: 10px;
+    padding-left:20px;
+    background-color:ghostwhite;
+    display: grid;
+    align-items: center;            
+    /* grid-template-areas: "hospital address contact schedule"; */
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    transition: 0.3s;
+    text-align: center;
+  }
+  .b1 {
+    height: 9vh;
+    opacity:95%;
+    border-radius: 10px;
+    padding-left:20px;
+    background-color:rgb(206, 198, 198);
+    display: grid;
+    align-items: center;            
+    /* grid-template-areas: "hospital address contact schedule"; */
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  .b > div{
+    border-right: 1px solid rgba(39, 39, 39, 0.277);
+    /* text-align: center; */
+  }
+  
+  .b :last-child{
+    border-right: 0;
+  }
+  
+  button {
+    background-color: #bfeebf;
+    height: 3vh;
+    width: 11vh;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2dd72d;
+    transform: scale(1.15);
+  }
+  
+  button:active {
+    background-color: #00a313;
+  }
+  
+  @media (max-width: 1120px) {
+    .navcontent ul {
+      display: none; 
+    }
+    .menu-toggle {
+      display: block;
+    }
+  }
+  @media (max-width:700px){
+    .b{
+      width: 100%;
+    }
+    .container{
+      width: 100%;
+    }
+  }
+  @media (max-width:500px){
+    .b{
+      width: 100%;
+      padding-left: 10px;
+    }
+    .container{
+      width: 100%;
+    }
+    p{
+      font-size: smaller;
+    }
+    button{
+      font-size: x-small;
+      width:8vh;
+    }
+  }
+  @media (max-width:400px){
+    p{
+      font-size: x-small;
+    }
+  }
+  
