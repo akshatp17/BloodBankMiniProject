@@ -143,6 +143,14 @@ button:active {
     font-size: x-small;
     width:8vh;
   }
+    .dock{
+    width:80vw;
+  }
+  .homeBtn{
+    height: 4vh;
+    font-size: x-small;
+    width:33vw;
+  }
 }
 @media (max-width:400px){
   p{
