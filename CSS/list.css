@@ -37,10 +37,22 @@
     flex-direction: column;
     gap:10px;
 }
-
+.b1 {
+  height: 6vh;
+  border-radius: 10px;
+  padding-left:20px;
+  background-color:rgb(70, 8, 8);
+  display: grid;
+  align-items: center;            
+  /* grid-template-areas: "hospital address contact schedule"; */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  transition: 0.3s;
+  text-align: center;
+}
 .b {
   height: 11vh;
   opacity:95%;
+  width:fit-content;
   border-radius: 10px;
   padding-left:20px;
   background-color:ghostwhite;
@@ -83,7 +95,7 @@ button:active {
 }
 
 .b:hover {
-  transform: scale(1.07);
+  transform: scale(1.03);
 }
 @media (max-width: 1120px) {
   .navcontent ul {
