@@ -1,9 +1,12 @@
 .fullpage {
-    height: 100vh;
-    width: 100vw;
-    background-color: #000000;
-    overflow-x: hidden;
- }
+  height: 100vh;
+  width: 100vw;
+  background-color: #252525;
+  overflow-x: hidden;
+  background-image:url(../Images/bldqbg.jpg);
+  background-position: center;
+  background-size: cover;
+}
  nav{
     display: flex;
     right:0;

@@ -140,6 +140,13 @@ main
     background-size: cover;
 }
 
+.new_quoteimg{
+    background-image: url(../Images/cnfrm.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
 #quoteintro{
     margin: 18%;
     position:relative;

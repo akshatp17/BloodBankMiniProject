@@ -1,5 +1,5 @@
 setInterval(ShowQuote,5000)
-
+let count = 1;
 function ShowQuote()
 {
     let Quotes=["A bottle of blood saved my life. Was it yours?",
@@ -15,6 +15,16 @@ function ShowQuote()
     let Pick = Math.floor(Math.random() * (Quotes.length));
     let quoteDiv = document.getElementById("quoteintro");
     quoteDiv.innerHTML = `"${Quotes[Pick]}"`; 
-}
 
+    let bg_div = document.getElementById("quote");
+
+    if (count == 0) {
+        bg_div.classList.add("new_quoteimg");
+        count++;
+    }
+    else if (count == 1) {
+        bg_div.classList.remove("new_quoteimg");
+        count--;
+    }
+}
 ShowQuote();
