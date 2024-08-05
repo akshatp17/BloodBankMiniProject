@@ -4,7 +4,7 @@ var inputEmail = document.getElementById("usermail");
 var inputDOB = document.getElementById("userdob");
 
 var bloodbank = localStorage.getItem("BankName");
-var apt_date = "2024-07-01";
+var apt_date = "2024-08-06";
 
 const calendarButtons = document.querySelectorAll('.datepicker-calendar button');
 
