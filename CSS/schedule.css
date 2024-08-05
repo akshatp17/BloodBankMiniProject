@@ -506,17 +506,6 @@ label:last-child span {
         margin-left:10vw;
         text-align:inherit;
     }
-    .radio-input{
-        width:95vw;
-        flex-direction: row;
-        
-    }
-    .selection{
-        width:fit-content;
-    }
-    .ac:hover{
-        background-color: red;
-    }
     h2{
         margin-left: 5vw;
         width:fit-content;
