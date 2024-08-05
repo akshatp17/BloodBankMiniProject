@@ -487,14 +487,38 @@ label:last-child span {
         width: 53vh;
 
     }
+    .month-name{
+        width: 100vw;
+        text-align: center;
+    }
 }
 
-@media (max-width:350px) {
+@media (max-width:450px) {
     .datepicker {
         width: 40vh;
     }
 
     p {
         width: 36vh;
+    }
+    .txt{
+        width:96vw;
+        margin-left:10vw;
+        text-align:inherit;
+    }
+    .radio-input{
+        width:95vw;
+        flex-direction: row;
+        
+    }
+    .selection{
+        width:fit-content;
+    }
+    .ac:hover{
+        background-color: red;
+    }
+    h2{
+        margin-left: 5vw;
+        width:fit-content;
     }
 }
